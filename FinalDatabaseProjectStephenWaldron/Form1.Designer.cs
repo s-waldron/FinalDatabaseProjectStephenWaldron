@@ -115,7 +115,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1004, 459);
+            this.tabControl1.Size = new System.Drawing.Size(717, 459);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -124,7 +124,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(996, 433);
+            this.tabPage1.Size = new System.Drawing.Size(709, 433);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Database Output";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -150,7 +150,7 @@
             this.dataGridView1.DataSource = this.getAllDataBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(6, 40);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(984, 387);
+            this.dataGridView1.Size = new System.Drawing.Size(697, 387);
             this.dataGridView1.TabIndex = 1;
             // 
             // actorFirstNameDataGridViewTextBoxColumn
@@ -273,7 +273,7 @@
             this.ActorListBox.FormattingEnabled = true;
             this.ActorListBox.Location = new System.Drawing.Point(13, 115);
             this.ActorListBox.Name = "ActorListBox";
-            this.ActorListBox.Size = new System.Drawing.Size(501, 290);
+            this.ActorListBox.Size = new System.Drawing.Size(225, 290);
             this.ActorListBox.TabIndex = 5;
             // 
             // ActorSubmit
@@ -340,7 +340,7 @@
             this.ProducerListBox.FormattingEnabled = true;
             this.ProducerListBox.Location = new System.Drawing.Point(7, 96);
             this.ProducerListBox.Name = "ProducerListBox";
-            this.ProducerListBox.Size = new System.Drawing.Size(596, 329);
+            this.ProducerListBox.Size = new System.Drawing.Size(259, 329);
             this.ProducerListBox.TabIndex = 6;
             // 
             // ProducerClear
@@ -415,7 +415,7 @@
             this.RatingListBox.FormattingEnabled = true;
             this.RatingListBox.Location = new System.Drawing.Point(7, 66);
             this.RatingListBox.Name = "RatingListBox";
-            this.RatingListBox.Size = new System.Drawing.Size(449, 355);
+            this.RatingListBox.Size = new System.Drawing.Size(249, 355);
             this.RatingListBox.TabIndex = 5;
             // 
             // RatingClear
@@ -481,7 +481,7 @@
             this.GenreListBox.FormattingEnabled = true;
             this.GenreListBox.Location = new System.Drawing.Point(7, 64);
             this.GenreListBox.Name = "GenreListBox";
-            this.GenreListBox.Size = new System.Drawing.Size(409, 355);
+            this.GenreListBox.Size = new System.Drawing.Size(243, 355);
             this.GenreListBox.TabIndex = 4;
             // 
             // GenreClear
@@ -550,7 +550,7 @@
             this.DecadeListBox.FormattingEnabled = true;
             this.DecadeListBox.Location = new System.Drawing.Point(7, 43);
             this.DecadeListBox.Name = "DecadeListBox";
-            this.DecadeListBox.Size = new System.Drawing.Size(371, 381);
+            this.DecadeListBox.Size = new System.Drawing.Size(256, 381);
             this.DecadeListBox.TabIndex = 4;
             // 
             // DecadeClear
@@ -617,7 +617,7 @@
             this.CharacterListBox.FormattingEnabled = true;
             this.CharacterListBox.Location = new System.Drawing.Point(7, 69);
             this.CharacterListBox.Name = "CharacterListBox";
-            this.CharacterListBox.Size = new System.Drawing.Size(433, 355);
+            this.CharacterListBox.Size = new System.Drawing.Size(270, 355);
             this.CharacterListBox.TabIndex = 4;
             // 
             // CharacterClear
@@ -669,7 +669,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1021, 477);
+            this.ClientSize = new System.Drawing.Size(733, 477);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Film Database Project";

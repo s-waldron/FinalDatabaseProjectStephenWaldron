@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
@@ -81,13 +75,23 @@ namespace FinalDatabaseProjectStephenWaldron
                                 if(i % 2 == 0)
                                 {
                                     DecadeListBox.Items.Add("Film Title: " + dr.GetValue(i));
-                                }
+                                }// end i % 2 == 0 if check
                                 if(i % 2 == 1)
                                 {
-                                    DecadeListBox.Items.Add("Film Release Date: " + dr.GetValue(i));
+                                    
+                                    string DateValue = dr.GetValue(i).ToString();
+                                    string TestValue = DateValue.Substring(1, 1);
+                                    if (TestValue.Equals("/"))
+                                    {
+                                        DateValue = DateValue.Substring(0, 9);
+                                    }// end TestValue if check
+                                    else
+                                    {
+                                        DateValue = DateValue.Substring(0, 10);
+                                    }// end else
+                                    DecadeListBox.Items.Add("Film Release Date: " + DateValue);
                                     DecadeListBox.Items.Add("");
-                                }
-                                
+                                }// end i % 2 == 1 if check
                             }// end for loop
                         }// end while loop
                     }// end using IDataReader
@@ -152,7 +156,17 @@ namespace FinalDatabaseProjectStephenWaldron
                                 }// end i % 5 == 3 if check
                                 if(i % 5 == 4)
                                 {
-                                    ActorListBox.Items.Add("Film Release Date: " + dr.GetValue(i));
+                                    string DateValue = dr.GetValue(i).ToString();
+                                    string TestValue = DateValue.Substring(1, 1);
+                                    if (TestValue.Equals("/"))
+                                    {
+                                        DateValue = DateValue.Substring(0, 9);
+                                    }// end TestValue if check
+                                    else
+                                    {
+                                        DateValue = DateValue.Substring(0, 10);
+                                    }// end else
+                                    ActorListBox.Items.Add("Film Release Date: " + DateValue);
                                     ActorListBox.Items.Add("");
                                 }// end i % 5 == 4 if check
                             }// end for loop
@@ -215,7 +229,17 @@ namespace FinalDatabaseProjectStephenWaldron
                                 }// end i % 4 == 2 if check
                                 if (i % 4 == 3)
                                 {
-                                    ProducerListBox.Items.Add("Film Release Date: " + dr.GetValue(i));
+                                    string DateValue = dr.GetValue(i).ToString();
+                                    string TestValue = DateValue.Substring(1, 1);
+                                    if (TestValue.Equals("/"))
+                                    {
+                                        DateValue = DateValue.Substring(0, 9);
+                                    }// end TestValue if check
+                                    else
+                                    {
+                                        DateValue = DateValue.Substring(0, 10);
+                                    }// end else
+                                    ProducerListBox.Items.Add("Film Release Date: " + DateValue);
                                     ProducerListBox.Items.Add("");
                                 }// end i % 4 == 3 if check
                             }// end for loop
@@ -386,7 +410,17 @@ namespace FinalDatabaseProjectStephenWaldron
                                 }// end i % 4 == 3 if check
                                 if (i % 5 == 4)
                                 {
-                                    CharacterListBox.Items.Add("Film Release Date: " + dr.GetValue(i));
+                                    string DateValue = dr.GetValue(i).ToString();
+                                    string TestValue = DateValue.Substring(1, 1);
+                                    if (TestValue.Equals("/"))
+                                    {
+                                        DateValue = DateValue.Substring(0, 9);
+                                    }// end TestValue if check
+                                    else
+                                    {
+                                        DateValue = DateValue.Substring(0, 10);
+                                    }// end else
+                                    CharacterListBox.Items.Add("Film Release Date: " + DateValue);
                                     CharacterListBox.Items.Add("");
                                 }// end i % 5 == 4 if check
                             }// end for loop
