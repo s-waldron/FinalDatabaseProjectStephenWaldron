@@ -440,5 +440,10 @@ namespace FinalDatabaseProjectStephenWaldron
         {
             DecadeListBox.Items.Clear();
         }// end DecadeClear_Click method
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }// end dataGridView1_CellContentClick method
     }// end Form1 class
 }// end namespace
